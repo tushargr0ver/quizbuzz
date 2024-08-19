@@ -1,4 +1,4 @@
-const alphabets = [a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
+const alphabets = ['a',b,c,d,e,f,g,h,i,j,k,l,m,n,o,p,q,r,s,t,u,v,w,x,y,z]
 
 
 function generateId(){
@@ -9,8 +9,12 @@ function generateId(){
     }
 
     const uniqueId = uniqueIdArray.join('')
+    console.log(uniqueId);
+    
     return uniqueId
 
 }
+
+generateId()
 
 export default generateId

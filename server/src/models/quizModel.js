@@ -55,6 +55,10 @@ const quizSchema = new mongoose.Schema({
     type:String,
     required:true
   },
+  quizEndDateTime:{
+    type:String,
+    required:true
+  },
   scores:{
     type: [scoreSchema]
   }

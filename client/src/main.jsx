@@ -7,8 +7,11 @@ import ErrorPage from './pages/error.jsx'
 import './index.css'
 import {
   createBrowserRouter,
+  json,
   RouterProvider,
 } from "react-router-dom";
+import NewQuiz from './pages/newQuiz.jsx'
+import Quiz from './pages/quiz.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,8 +28,10 @@ const router = createBrowserRouter([
     element: <Login />
   },
   {
-    path:"/create-new-quiz"
-  }
+    path:"/create-new-quiz",
+    element: <NewQuiz />
+  },
+    
 ]);
 
 createRoot(document.getElementById('root')).render(
